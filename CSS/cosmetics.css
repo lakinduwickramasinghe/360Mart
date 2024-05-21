@@ -22,154 +22,133 @@ p{
 }
 
 
-.products {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.products-container {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 1.5rem;
-    margin-top: 2rem;
-}
-
-.products-container .box {
-    padding: 20px;
-    box-shadow: 1px 1px 11px 4px rgb(14 55 54/15%);
-    border-radius: 0.5rem;
+/* cosmetic_product */
+.cosmetic_product {
+    display: flex;
+    flex-direction: column;  
+    width: 90%;
+    border-radius: 30px;
+    background-color: var(--banner-bg-color);
+    margin: 3% 5%; 
     position: relative;
-    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--border);
 }
 
-.products-container .box:hover {
-    box-shadow: 4px 4px 20px 8px rgba(0, 141, 59, 0.295);
-    cursor: pointer;
+/* cosmetic product table */
+.cosmetic_product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 25px;
 }
 
-.products-container .box img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    object-position: center;
-    display: block;
-}
-
-.products-container .box span {
-    font-weight: 500;
-    font-size: 13px;
-}
-
-.products-container .box h2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.fresh-deal {
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    background: rgb(0, 199, 50);
-    color: #fff;
-    padding: 4px 18px;
-}
-
-.products-container .box .price {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
-    color: rgb(0, 182, 55);
-    text-shadow: 1px 1px 5px #e2e2e2;
-}
-
-.products-container .box .discount {
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    background: rgb(255, 0, 0);
-    color: #fff;
-    padding: 4px 18px;
-    text-shadow: 1px 1px 5px #e2e2e2;
-}
-
-.products-container .box .price .count {
-    color: #302222;
-}
-
-.products-container .box .fa-cart-shopping {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+/* cosmetic table header*/
+.cosmetic_product h3 {
+    color: var(--header-text);
     padding: 10px;
-    background: rgb(1, 199, 1);
-    font-size: 20px;
-    border-radius: 0.5rem 0.5rem 0;
-    color: #fff;
+    font-size: 1.5em;
+    font-family: "Poetsen One", sans-serif;
 }
 
-.products-container .box .fa-cart-shopping:hover {
-    background: orange;
-    transition: 0.2s all linear;
+/* cosmetic table header image*/
+.cosmetic_product img {
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    border: 1px solid var(--border);
 }
 
-.products-container .box .fa-heart {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 20px;
-    color: lightcoral;
+/* cosmetic table body*/
+.cosmetic_product .table {   
+    padding: 10px;
+    margin: 10px;
+    border-collapse: collapse;
 }
 
-.in-stock-label {
-    color: rgb(106, 177, 0);
-}
-.out-of-stock-label {
-    color: #ff0000;
-}
-
-
-.ver-item-table{
-    display: none;
+/* table hyper link */
+table td a {
+    padding: 8px;
+    border-radius: 50px;
+    color: var(--icon-text);
+    background-color: var(--icon-bg);
 }
 
-@media(max-width: 600px) {
-    .ver-item-table{
-        display: block;
-    }
-    .ver-item-table2{
-        display: none;
-    }
-    .hor-item-table{
-        display: none;
-    }
+/* table hyper link hover */
+table td a:hover {
+    background-color: var(--sub-text);    
+    color: var(--text);
 }
 
-@media(max-width:900px) and (min-width:600px){
-    .ver-item-table2{
-        display: block;
-    }
-    .hor-item-table{
-        display: none;
-    }
+.table th, td {
+    border: 2px solid black;
+    text-align: left;
+    padding: 6px;
 }
 
-@media(min-width:900px){
-    .ver-item-table{
-        display: none;
-    }
-    .ver-item-table2{
-        display: none;
-    }
+.cosmetic_product .table .product_img {   
+    width: fit-content;
+    border: none;
+    border-radius: 0;
+}
+
+.table th{
+    background-color: var(--th-bg);
+}
+
+.table tbody tr:nth-child(even){
+    background-color: var(--tr-even);
+}
+
+/* table raw hover */
+.table tbody tr:hover {
+    background-color: var(--tr-hover);
 }
 
 
-/* @media screen and (max-width: 768px) {
-    .products-container {
-        display: block;
-    }
 
-    .products-container td {
-        width: 100%;
-    }
-} */
+
+@media(max-width:750px){
+
+    
+/* cosmetic product category */
+.category_title h1 {
+    padding: 15px 0 15px 0;
+}
+.product_category {
+    display: flex;
+    flex-direction: column;  
+    width: 90%;
+    height: auto;
+    padding: 20px;
+}
+.facecare h3, .womensfragrances h3, .skincare h3, .mensfragrances h3, .colorcosmetics h3{
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/* cosmetic table body*/
+.cosmetic_product {
+    width: 90%;
+    margin: 3% auto;
+}
+.cosmetic_product .table {
+    width: 100%;
+    overflow-x: auto;
+    font-size: 0.8em;
+}
+.cosmetic_product .table th,
+.cosmetic_product .table td {
+    white-space: nowrap;
+    font-size: 0.8em;
+}
+.cosmetic_product .table .product_img {
+    width: 90px;
+    height: auto;
+}
+}

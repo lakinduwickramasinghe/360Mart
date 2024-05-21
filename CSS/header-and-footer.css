@@ -258,7 +258,7 @@ main{
 
 /* Footer css code */
 footer{
-    margin-top: 100vh;
+    /* margin-top: 100vh; */
 }
 body{
   line-height: 1.5;
