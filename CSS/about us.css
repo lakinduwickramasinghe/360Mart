@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: nones;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.img-section{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+
+}
+.img-section-coll{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 1.5vh;
+
+}
+
+.img-section-coll img{
+    width: 100%;
+    border-radius: 10px;
+     
+}
+
+.img-section-coll iframe{
+    padding-top: 10px;
+}
+
+.rows{
+    display: flex;
+}
+
+
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10vh;
+
+}
+.table tr th{
+    background-color: #74f895;
+    color: #fff;
+    text-align: left;
+
+}
+
+.table th,
+table td{
+    padding: 12px 15px;
+}
+
+.table tr{
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.table tr:nth-of-type(even){
+    background-color: #f3f3f3;
+
+}
+
+.table tr:last-of-type{
+    border-bottom: 2px solid #74f895 ;
+}
+
+.table tr:hover{
+    background-color: #4af6b4;
+    cursor: pointer;
+}
+
+.table-section{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer css code */
+.map {
+    width: 400px;
+    height: 300px;
+    border:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:700px){
+    .rows{
+        flex-direction: column;
+    }
+    .img-section{
+        width: 95%;
+    
+    }
+}
+
+@media(max-width:991px){
+    .copyright-section{
+        padding: 3rem 2rem;
+    }
+}

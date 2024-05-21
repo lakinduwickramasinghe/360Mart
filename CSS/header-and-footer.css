@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* The purpose of this file is to save the most reapeating elements of a website which are the header and the footet's css code into one 
+file and link it in each html file */
+
+/* so pasting only the html code and connecting this css file in every html page is enough 
+rather than pasting the same css code in every page's css file */
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: nones;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+}
+
+
+
+/* Header css */
+.header{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.cpn-logo{
+    width: 200px;
+    
+    padding: 1.5vh;
+}
+
+
+header .top-bar .icons .fa-bars{
+    display: none;
+}
+
+header {
+    background-color: #00a048;
+    color: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.search-container {
+    flex-grow: 1;
+    margin: 0 100px; 
+}
+
+.search-container input {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+
+}
+
+.icons i:hover{
+    color: #e91e63;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    background-color: #00dc51a3;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-links ul li {
+    margin: 0 20px;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+    background-color: #f2ff00;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.menu-toggle span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+    transition: transform 0.3s;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+
+/* Making the header responsive using media queries */
+@media (max-width: 1050px) {
+    .search-container {
+        flex-grow: 1;
+        margin: 0 45px; 
+    }
+    
+    /* .nav-links {
+        display: none;
+    }
+
+    .nav-links.mobile-menu {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    } */
+}
+
+.both{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 750px) {
+    .search-container {
+        flex-grow: 1;
+        margin: 0 25px; 
+    }
+
+    .cpn-logo{
+        width: 150px;
+        height: auto;
+        padding: 1.5vh;
+    }
+}
+
+@media (max-width: 630px) {
+    .nav-links ul{
+        display: none;
+    }
+    .top-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .both{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    header .top-bar .icons .fa-bars{
+        display: flex;
+    }
+    
+}
+
+@media (max-width: 630px) {
+    .nav-links ul{
+        display: none;
+    }
+    .top-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .both{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .icons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 50px;
+        margin-top: 15px;
+        margin-bottom: 7px;
+        margin-left: 0;
+    }
+    header .top-bar .icons .fa-bars{
+        display: flex;
+    }
+
+    .cpn-logo{
+        width: 150px;
+        height: auto;
+        padding: 0 1.5vh 1.5vh 1.5vh;
+    }
+
+    header .nav-links .active {
+        z-index: 1000;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+        /* Highlighted lines are added or changed */
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer css code */
+footer{
+    margin-top: 100vh;
+}
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+
+/* Footer media queries */
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
