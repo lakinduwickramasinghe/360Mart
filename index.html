@@ -6,7 +6,7 @@
     <!-- <link rel="stylesheet" href="../CSS/reset.css" type="text/css"> -->
 
     <!-- index css file link -->
-    <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/index.css" type="text/css">
 
     <!-- linking fontswesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,6 +14,8 @@
     <!-- Linking the leader and footer css file -->
     <link rel="stylesheet" href="./CSS/header-and-footer.css">
 
+    <!-- Swiperjs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,9 +49,34 @@
         </nav>
     </header>
 
+
+
+
+
+
+
+    <section class="swiper mySwiper">
+      <section class="swiper-wrapper">
+        <section class="swiper-slide"><img src="./IMAGES/c.banner01.webp" alt=""></section>
+        <section class="swiper-slide"><img src="./IMAGES/c.banner02.webp" alt=""></section>
+        <section class="swiper-slide"><img src="./IMAGES/c.banner03.webp" alt=""></section>
+        <section class="swiper-slide"><img src="./IMAGES/c.banner04.webp" alt=""></section>
+        <section class="swiper-slide">Slide 5</section>
+        <section class="swiper-slide">Slide 6</section>
+        <section class="swiper-slide">Slide 7</section>
+        <section class="swiper-slide">Slide 8</section>
+        <section class="swiper-slide">Slide 9</section>
+      </section>
+      <section class="swiper-button-next"></section>
+      <section class="swiper-button-prev"></section>
+      <section class="swiper-pagination"></section>
+    </section>
+
+
       <section class="gap">
         
       </section>
+
 
     <!-- Footer -->
 
@@ -97,7 +124,29 @@
         </section>
      </footer>
 
-     <script src="./JS/menu.js"></script>
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 </body>
 </html>

@@ -65,7 +65,7 @@ p{
     transition: 0.5s;
     margin-bottom: 25px;
 }
-`
+
 .products-container .box:hover{
     padding: 20px;
     box-shadow: 4px 4px 20px 8px var(--secondary-color);
