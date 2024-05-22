@@ -80,11 +80,6 @@ header .top-bar .icons .fa:hover{
 }
 
 
-/* .icons .fa:hover{
-    color: var(--primary-color);
-} */
-
-
 /* Making the menu icon invisible for the full screen  mode */
 header .top-bar .icons .fa-bars{
 
@@ -216,7 +211,7 @@ main{
 
     header .top-bar .icons .fa-bars{
         position: relative;
-        left: 0xp;
+        left: 0px;
     }
     .nav-links ul{
         display: none;
@@ -253,7 +248,7 @@ main{
         flex-direction: column;
         justify-content: space-around;
     }
-    }
+    
     .icons{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -278,6 +273,8 @@ main{
         opacity: 1;
         visibility: visible;
         transform: translateY(0%);
+    }
+
     }
     
 }
