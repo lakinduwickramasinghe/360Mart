@@ -9,6 +9,7 @@ rather than pasting the same css code in every page's css file */
 
 
 :root{
+    --black-color: #000000;
     --text-color: #210502;
     --background-color: #fff7f7;
     --primary-color: #f4321c;
@@ -17,6 +18,7 @@ rather than pasting the same css code in every page's css file */
     --ash-color: #4b4b4b;
     --primary-color-light: #f4321cc9;
     --white-color: #fff;
+    --secondary-text-color: #777777;
 }
 
 
@@ -137,7 +139,7 @@ header {
 .nav-links {
     display: flex;
     justify-content: center;
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-color);
 }
 
 .nav-links ul {

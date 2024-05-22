@@ -2,11 +2,17 @@
 
 
 :root{
+    --black-color: #000000;
     --text-color: #210502;
     --background-color: #fff7f7;
     --primary-color: #f4321c;
     --secondary-color: #f8d770;
     --accent-color: #f6f449;
+    --ash-color: #4b4b4b;
+    --primary-color-light: #f4321cc9;
+    --white-color: #fff;
+    --secondary-text-color: #777777;
+    --secondary-color-light: #f8d67037;
 }
 
 
@@ -20,7 +26,7 @@
 
 a{
     text-decoration: none;
-    color: #000;
+    color: var(--black-color);
 }
 
 h1{
@@ -29,7 +35,7 @@ h1{
 }
 
 p{
-    color: #777;
+    color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -87,8 +93,8 @@ p{
 }
 .categories .category-container .box .fa{
     padding: 10px;
-    background: #22ea59;
-    color: #000;
+    background: var(--accent-color);
+    color: var(--black-color);
     border-radius: 5rem;
     margin-top: 2rem;
     position: absolute;
@@ -97,7 +103,7 @@ p{
 }
 
 .categories .category-container .box .fa:hover{
-    background: orangered;
+    background: var(--secondary-color);
     transition: 0.2s all linear;
 }
 
@@ -108,5 +114,13 @@ p{
 }
 
 .categories .category-container .box0{
-    background: #e3fce9;
+    /* box-shadow: 5px 5px 5px 1px #0000005a; */
+    background: var(--secondary-color-light);
+    transition: 0.4s;
 }
+
+.categories .category-container .box0:hover{
+    box-shadow: 1px 1px 11px 4px rgb(14 55 54/15%);
+    background: var(--secondary-color-light);
+}
+
