@@ -7,6 +7,20 @@ file and link it in each html file */
 /* so pasting only the html code and connecting this css file in every html page is enough 
 rather than pasting the same css code in every page's css file */
 
+
+:root{
+    --text-color: #210502;
+    --background-color: #fff7f7;
+    --primary-color: #f4321c;
+    --secondary-color: #f8d770;
+    --accent-color: #f6f449;
+    --ash-color: #4b4b4b;
+    --primary-color-light: #f4321cc9;
+    --white-color: #fff;
+}
+
+
+
 *{
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -22,11 +36,12 @@ body{
 
 
 /* Header css */
+
+
 .header{
     width: 100%;
     height: 100vh;
     position: absolute;
-    background-color: #f0f0f0;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -34,20 +49,50 @@ body{
 
 }
 
-.cpn-logo{
+/* .cpn-logo{
     width: 200px;
-    
+   
     padding: 1.5vh;
+} */
+
+.top-bar .logo .cpn-logo{
+    width: 190px;
+    height: auto;
+    padding-top: 17px;
+}
+
+header .top-bar .icons{
+    display: inline-flex;
+    align-items: center;
+}
+
+header .top-bar .icons .fa{
+    color: var(--ash-color);
+    text-decoration: none;
+}
+
+header .top-bar .icons .fa:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 
+/* .icons .fa:hover{
+    color: var(--primary-color);
+} */
+
+
+/* Making the menu icon invisible for the full screen  mode */
 header .top-bar .icons .fa-bars{
-    display: none;
+
+    position: absolute;
+    left: -9999px;
 }
 
 header {
-    background-color: #00a048;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--ash-color);
 }
 
 .top-bar {
@@ -61,13 +106,22 @@ header {
 .search-container {
     flex-grow: 1;
     margin: 0 100px; 
+    box-shadow: 2px 2px 5px 1px ;
+    transition: 0.2s;
+}
+
+.search-container:hover{
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 0 100px; 
+    box-shadow: 4px 4px 10px 2px ;
 }
 
 .search-container input {
     width: 100%;
     padding: 5px 10px 5px 10px;
-    border: none;
-    border-radius: 20px;
+    /* border: none;
+    border-radius: 20px; */
 }
 
 .icons{
@@ -77,15 +131,13 @@ header {
 
 }
 
-.icons i:hover{
-    color: #e91e63;
-}
+
 
 
 .nav-links {
     display: flex;
     justify-content: center;
-    background-color: #00dc51a3;
+    background-color: var(--primary-color-light);
 }
 
 .nav-links ul {
@@ -107,7 +159,8 @@ header {
 }
 
 .nav-links ul li a:hover {
-    background-color: #f2ff00;
+    color: var(--secondary-color);
+    /* background-color: #f2ff00; */
 }
 
 .menu-toggle {
@@ -158,6 +211,11 @@ main{
 }
 
 @media (max-width: 630px) {
+
+    header .top-bar .icons .fa-bars{
+        position: relative;
+        left: 0xp;
+    }
     .nav-links ul{
         display: none;
     }
@@ -165,6 +223,8 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        border-bottom: var(--ash-color) 1px;
+        border-bottom: 1px solid var(--ash-color);
     }
     .both{
         display: flex;
@@ -191,10 +251,6 @@ main{
         flex-direction: column;
         justify-content: space-around;
     }
-    .both{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
     }
     .icons{
         display: grid;

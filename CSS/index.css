@@ -1,0 +1,13 @@
+:root{
+    --text-color: #210502;
+    --background-color: #fff7f7;
+    --primary-color: #f4321c;
+    --secondary-color: #f8d770;
+    --accent-color: #f6f449;
+    --ash-color: #4b4b4b;
+    --primary-color-light: #f4321cc9;
+}
+
+.gap{
+    min-height: 100vh;
+}
