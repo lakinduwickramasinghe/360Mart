@@ -101,101 +101,6 @@ table td{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Footer css code */
-.map {
-    width: 400px;
-    height: 300px;
-    border:0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width:700px){
     .rows{
         flex-direction: column;
@@ -203,11 +108,5 @@ table td{
     .img-section{
         width: 95%;
     
-    }
-}
-
-@media(max-width:991px){
-    .copyright-section{
-        padding: 3rem 2rem;
     }
 }
