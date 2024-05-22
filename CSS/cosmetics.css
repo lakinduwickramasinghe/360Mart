@@ -23,7 +23,7 @@ p{
 
 
 
-/* cosmetic_product */
+
 .cosmetic_product {
     display: flex;
     flex-direction: column;  
@@ -37,7 +37,7 @@ p{
     border: 2px solid var(--border);
 }
 
-/* cosmetic product table */
+
 .cosmetic_product {
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@ p{
     padding: 25px;
 }
 
-/* cosmetic table header*/
+
 .cosmetic_product h3 {
     color: var(--header-text);
     padding: 10px;
@@ -55,7 +55,7 @@ p{
     font-family: "Poetsen One", sans-serif;
 }
 
-/* cosmetic table header image*/
+
 .cosmetic_product img {
     border-radius: 100%;
     width: 130px;
@@ -63,14 +63,14 @@ p{
     border: 1px solid var(--border);
 }
 
-/* cosmetic table body*/
+
 .cosmetic_product .table {   
     padding: 10px;
     margin: 10px;
     border-collapse: collapse;
 }
 
-/* table hyper link */
+
 table td a {
     padding: 8px;
     border-radius: 50px;
@@ -78,7 +78,7 @@ table td a {
     background-color: var(--icon-bg);
 }
 
-/* table hyper link hover */
+
 table td a:hover {
     background-color: var(--sub-text);    
     color: var(--text);
@@ -104,7 +104,7 @@ table td a:hover {
     background-color: var(--tr-even);
 }
 
-/* table raw hover */
+
 .table tbody tr:hover {
     background-color: var(--tr-hover);
 }
@@ -115,7 +115,7 @@ table td a:hover {
 @media(max-width:750px){
 
     
-/* cosmetic product category */
+
 .category_title h1 {
     padding: 15px 0 15px 0;
 }
@@ -132,7 +132,7 @@ table td a:hover {
 }
 
 
-/* cosmetic table body*/
+
 .cosmetic_product {
     width: 90%;
     margin: 3% auto;
