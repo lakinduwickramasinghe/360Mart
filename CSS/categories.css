@@ -2,17 +2,19 @@
 
 
 :root{
-    --black-color: #000000;
+    --black-color: #000;
     --text-color: #210502;
     --background-color: #fff7f7;
     --primary-color: #f4321c;
     --secondary-color: #f8d770;
-    --accent-color: #f6f449;
+    --accent-color: #f6f349;
     --ash-color: #4b4b4b;
-    --primary-color-light: #f4321cc9;
+    --primary-color-light: #f4321c29;
     --white-color: #fff;
     --secondary-text-color: #777777;
     --secondary-color-light: #f8d67037;
+    --red-color: #ff0000;
+    --green-color: #6AB100;
 }
 
 
