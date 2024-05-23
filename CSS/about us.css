@@ -125,3 +125,10 @@ table td{
     
     }
 }
+
+
+@media(max-width:400px){
+    .map{
+        width: 300px;
+    }
+}
