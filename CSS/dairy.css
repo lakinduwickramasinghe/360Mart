@@ -38,6 +38,105 @@ p{
     margin-right: auto;
 }
 
+
+
+
+
+
+/* text section codes */
+.main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 50px;
+    width: 100%;
+    height: fit-content;
+}
+
+.text-one{
+    width: 80%;
+    height: fit-content;
+    background: #ffe3e0;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+.text-one{
+    /* flex-basis: 31%; */
+
+    /* background: #ffdbdb; */
+
+}
+
+.sections:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.sub-section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+
+}
+
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.h3-tag{
+    font-weight: 600;
+    margin: 25px 25px 25px 0;
+    text-align: center;
+}
+
+.sections{
+    flex-basis: 31%;
+    background: #ffe3e0;
+    /* background: #ffdbdb; */
+    margin-bottom: 5%;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.sections:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .products{
     max-width: 80%;
     margin-left: auto;
