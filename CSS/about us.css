@@ -17,7 +17,7 @@
     --green-color: #6AB100;
 }
 
-
+/* General reset for padding, margin, box-sizing, and list styles */
 *{
     font-family: "Poppins", sans-serif;
     margin: 0;
