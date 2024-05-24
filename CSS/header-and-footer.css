@@ -21,7 +21,9 @@ rather than pasting the same css code in every page's css file */
     --secondary-text-color: #777777;
 }
 
-
+a{
+    text-decoration: none;
+    color: var(--white-color);}
 
 *{
     font-family: "Poppins", sans-serif;
@@ -137,17 +139,17 @@ header {
     background-color: var(--primary-color);
 }
 
-.nav-links ul {
+.nav-links .ul {
     display: flex;
-    /* list-style: none; */
+        list-style: none;
     padding: 10px 0;
 }
 
-.nav-links ul li {
+.nav-links .ul .li {
     margin: 0 20px;
 }
 
-.nav-links ul li a {
+.nav-links .ul li a {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
@@ -155,7 +157,7 @@ header {
     transition: 0.3s;
 }
 
-.nav-links ul li a:hover {
+.nav-links .ul .li a:hover {
     color: var(--secondary-color);
     /* background-color: #f2ff00; */
 }
@@ -213,7 +215,7 @@ main{
         position: relative;
         left: 0px;
     }
-    .nav-links ul{
+    .nav-links .ul{
         display: none;
     }
     .top-bar{
@@ -240,7 +242,7 @@ main{
 }
 
 @media (max-width: 630px) {
-    .nav-links ul{
+    .nav-links .ul{
         display: none;
     }
     .top-bar{
@@ -343,10 +345,10 @@ body{
   box-sizing: border-box;
   width: 50px;
 }
-.footer-col ul li:not(:last-child){
+.footer-col .ul li:not(:last-child){
   margin-bottom: 10px;
 }
-.footer-col ul li a{
+.footer-col .ul li a{
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff;
@@ -357,7 +359,7 @@ body{
   transition: all 0.3s ease;
 }
 
-.footer-col ul li {
+.footer-col .ul .li {
     font-size: 16px;
     text-transform: capitalize;
     color: #ffffff;
@@ -368,7 +370,7 @@ body{
     transition: all 0.3s ease;
   }
 
-.footer-col ul li a:hover{
+.footer-col .ul .li a:hover{
   color: #ffffff;
   padding-left: 8px;
 }

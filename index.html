@@ -2,8 +2,17 @@
 <html lang="en">
 <head>
 
+    <!-- Favicons and pwa -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- reset css link -->
-    <link rel="stylesheet" href="./CSS/reset.css" type="text/css">
+    <!-- <link rel="stylesheet" href="./CSS/reset.css" type="text/css"> -->
 
     <!-- Main CSS file link -->
     <link rel="stylesheet" href="./CSS/index.css" type="text/css">
@@ -43,13 +52,13 @@
         </section>
         <!-- Navigation links -->
         <nav class="nav-links" id="vertical-menu">
-            <ol>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about us.html">About Us</a></li>
-                <li><a href="./categories.html">Shop</a></li>
-                <li><a href="./register.html">Loyalty</a></li>
-                <li><a href="./login.html">Login</a></li>
-            </ol>
+          <section class="ul">
+            <a href="./index.html" class="li">Home</a>
+            <a href="./about us.html" class="li">About Us</a>
+            <a href="./categories.html" class="li">Shop</a>
+            <a href="./register.html" class="li">Loyalty</a>
+            <a href="./login.html" class="li">Login</a>
+          </section>
         </nav>
     </header>
 
@@ -73,28 +82,52 @@
       <section class="swiper-pagination"></section>
     </section>
 
-    <!-- Gap section for spacing -->
-      <section class="gap">
-        
-      </section>
+  <!-- Image section with text -->
+  <section class="img-section">
+    <h1>Welcome to 360MART Supermarket</h1>
+    <p>Welcome to 360MART, your one-stop destination for all your grocery needs. We offer a wide range of products, from fresh produce to bakery delights, and everything in between. Our goal is to provide high-quality products and exceptional customer service. Visit us to experience a supermarket that values freshness, quality, and community.</p>
 
+    <section class="rows">
 
-
-      <section class="img-sec">
-        <section class="columm">
-        <img src="./IMAGES/aboutus02.webp" alt="" class="img-01">
-        <section class="col">
-          <h1>Fresh Produce</h1>
-          <p>Our supermarket prides itself on offering the freshest produce available. We source our fruits and vegetables from local farmers to ensure quality and sustainability. You'll find a wide variety of seasonal fruits, leafy greens, and root vegetables that are perfect for any meal.</p>
-          <p>We also have a selection of organic produce for health-conscious shoppers. Our commitment to freshness means our produce is delivered daily, ensuring you get the best in taste and nutrition. Come and explore our vibrant produce section where health meets deliciousness.</p>
-          <ul>
-            <li>Locally sourced fruits and vegetables</li>
-            <li>Organic produce options</li>
-            <li>Daily fresh deliveries</li>
-        </ul>
+        <section class="img-section-coll">
+            <img src="./IMAGES/h.image01.webp" alt="Smiling supermarket team members standing together for a group photo">
+            <h3>Fresh Produce</h3>
+            <p>Our supermarket prides itself on offering the freshest produce available. We source our fruits and vegetables from local farmers to ensure quality and sustainability. You'll find a wide variety of seasonal fruits, leafy greens, and root vegetables that are perfect for any meal.</p>
+            <p>We also have a selection of organic produce for health-conscious shoppers. Our commitment to freshness means our produce is delivered daily, ensuring you get the best in taste and nutrition. Come and explore our vibrant produce section where health meets deliciousness.</p>
+            <ol>
+              <li>Locally sourced fruits and vegetables</li>
+              <li>Organic produce options</li>
+              <li>Daily fresh deliveries</li>
         </section>
+
+        <section class="img-section-coll">
+            <img src="./IMAGES/h.image02.webp" alt="Image">
+            <h3>Bakery Delights</h3>
+            <p>Our bakery section offers a delightful assortment of freshly baked goods. From crusty artisan bread to sweet pastries, our bakers use only the finest ingredients to create delicious treats. Whether you're looking for a quick snack or a special dessert, you'll find something to satisfy your cravings.</p>
+            <p>We also cater to various dietary needs with our gluten-free and vegan options. Our bakery items are made fresh every day, ensuring you enjoy the best flavors and textures. Visit our bakery section and indulge in the aroma and taste of freshly baked delights.</p>
+            <ol>
+              <li>Artisan breads and pastries</li>
+              <li>Gluten-free and vegan options</li>
+              <li>Freshly baked daily</li>
+            </ol>
         </section>
-      </section>
+
+
+        <section class="img-section-coll">
+            <img src="./IMAGES/h.image03.webp" alt="Image">
+            <h3>Quality Meats</h3>
+            <p>At FreshMart, our meat department offers a wide selection of high-quality meats. From grass-fed beef to free-range poultry, we ensure that all our meat products are sourced from trusted suppliers who adhere to the highest standards of quality and ethics.</p>
+            <p>We also provide a variety of cuts to meet your cooking needs, whether you're planning a family barbecue or a gourmet dinner. Our knowledgeable staff is always available to assist you with your selections and provide cooking tips. Discover the best cuts of meat at FreshMart, where quality is guaranteed.</p>
+            <ul>
+              <li>Grass-fed beef</li>
+              <li>Free-range poultry</li>
+              <li>Knowledgeable staff for assistance</li>
+            </ul>
+
+        </section>
+
+    </section>
+</section>
 
     <!-- Footer -->
 
@@ -120,7 +153,6 @@
                <li><a href="./dairy.html">Dairy</a></li>
                <li><a href="./cosmetics.html">Cosmetics</a></li>
                <li><a href="./household.html">Household Essentials</a></li>
-               <li><a href="./electronics.html">Electronics</a></li>
              </ul>
            </section>
            <!-- Contact information -->
