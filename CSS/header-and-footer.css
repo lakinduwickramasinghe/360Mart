@@ -21,6 +21,24 @@ rather than pasting the same css code in every page's css file */
     --secondary-text-color: #777777;
 }
 
+
+
+
+
+
+.deco-list{
+    list-style: none;
+}
+
+.non-deco-list{
+    list-style-type: disc;
+}
+
+
+
+
+
+
 a{
     text-decoration: none;
     color: var(--white-color);}
@@ -139,17 +157,17 @@ header {
     background-color: var(--primary-color);
 }
 
-.nav-links .ul {
+.nav-links ul {
     display: flex;
         list-style: none;
     padding: 10px 0;
 }
 
-.nav-links .ul .li {
+.nav-links ul li {
     margin: 0 20px;
 }
 
-.nav-links .ul li a {
+.nav-links ul li a {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
@@ -157,7 +175,7 @@ header {
     transition: 0.3s;
 }
 
-.nav-links .ul .li a:hover {
+.nav-links ul li a:hover {
     color: var(--secondary-color);
     /* background-color: #f2ff00; */
 }
@@ -181,6 +199,95 @@ main{
     width: 100%;
     height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px; 
+    padding: 0 10px; 
+  }
+  
+  .sc {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .sc-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sc-2 i {
+    font-size: 28px; 
+    color: var(--accent-color);
+  }
+  .sc-2 i:hover {
+    color: var(--secondary-color);
+  }
+  
+  .sc-2 a {
+    font-size: 12px;
+    margin-top: 4px; 
+    text-decoration: none;
+    color: #ffffff; 
+  }
+
+  
+  .sc-2 a:hover {
+    color: var(--secondary-color); 
+  }
+
+  .mobile-nav{
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Making the header responsive using media queries */
@@ -210,14 +317,24 @@ main{
 }
 
 @media (max-width: 630px) {
+    .mobile-nav{
+        display: block;
+      }
+
+    header .nav-links{
+        display: none;
+    }
+    header .mobile-nav{
+        display: flex;
+    }
 
     header .top-bar .icons .fa-bars{
         position: relative;
         left: 0px;
     }
-    .nav-links .ul{
+    /* .nav-links .ul{
         display: none;
-    }
+    } */
     .top-bar{
         display: flex;
         flex-direction: column;
@@ -242,9 +359,9 @@ main{
 }
 
 @media (max-width: 630px) {
-    .nav-links .ul{
+    /* .nav-links .ul{
         display: none;
-    }
+    } */
     .top-bar{
         display: flex;
         flex-direction: column;
@@ -279,6 +396,21 @@ main{
 
     }
 
+    @media(max-width:400px){
+        .sc-2 a {
+            font-size: 9px;
+          }
+          .sc-2 i {
+            font-size: 18px; 
+            color: var(--accent-color);
+          }
+    }
+
+
+
+
+
+
 
 
 
@@ -297,13 +429,8 @@ footer{
 }
 body{
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
 }
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
+
 .ftr-container{
   max-width: 1170px;
   margin:auto;
@@ -312,7 +439,9 @@ body{
   display: flex;
   flex-wrap: wrap;
 }
-
+a{
+    text-decoration: none;
+}
 /* ul{
   list-style: none;
 } */
@@ -345,10 +474,10 @@ body{
   box-sizing: border-box;
   width: 50px;
 }
-.footer-col .ul li:not(:last-child){
+.footer-col ul li:not(:last-child){
   margin-bottom: 10px;
 }
-.footer-col .ul li a{
+.footer-col ul li a{
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff;
@@ -359,7 +488,8 @@ body{
   transition: all 0.3s ease;
 }
 
-.footer-col .ul .li {
+.footer-col ul li,
+.footer-col ul span {
     font-size: 16px;
     text-transform: capitalize;
     color: #ffffff;
@@ -370,7 +500,7 @@ body{
     transition: all 0.3s ease;
   }
 
-.footer-col .ul .li a:hover{
+.footer-col ul li a:hover{
   color: #ffffff;
   padding-left: 8px;
 }
