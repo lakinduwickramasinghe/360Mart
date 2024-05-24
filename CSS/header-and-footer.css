@@ -27,11 +27,11 @@ rather than pasting the same css code in every page's css file */
 
 
 .deco-list{
-    list-style: none;
+    list-style-type: disc;
 }
 
 .non-deco-list{
-    list-style-type: disc;
+    list-style: none;
 }
 
 
@@ -159,7 +159,6 @@ header {
 
 .nav-links ul {
     display: flex;
-        list-style: none;
     padding: 10px 0;
 }
 
@@ -442,9 +441,6 @@ body{
 a{
     text-decoration: none;
 }
-/* ul{
-  list-style: none;
-} */
 
 .footer{
   background-color: #24262b;
