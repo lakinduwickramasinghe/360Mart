@@ -39,6 +39,8 @@ p{
     padding: 10px;
 }
 
+/* section with images css codes begin here */
+
 .img-section{
     width: 90%;
     margin: auto;
@@ -70,6 +72,8 @@ p{
 }
 
 
+
+/* css codes for the table */
 .table{
     border-collapse: collapse;
     margin: 25px 0;
@@ -118,7 +122,7 @@ table td{
 }
 
 
-
+/* media queries */
 @media(max-width:700px){
     .rows{
         flex-direction: column;

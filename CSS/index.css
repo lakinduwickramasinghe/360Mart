@@ -1,4 +1,5 @@
-:root{
+:root {
+  /* Color variables */
   --black-color: #000000;
   --text-color: #210502;
   --background-color: #fff7f7;
@@ -11,88 +12,90 @@
   --secondary-text-color: #777777;
 }
 
-
-*{
+/* Global styles */
+* {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  border: nones;
+  border: none; /* Removing border from all elements */
   box-sizing: border-box;
 }
 
-h1{
+/* Header 1 styles */
+h1 {
   font-size: 36px;
   font-weight: 600;
 }
 
-p{
-  color: var(--secondary-text-color);
+/* Paragraph styles */
+p {
+  color: var(--secondary-text-color); /* Setting text color using variable */
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
   padding: 10px;
 }
 
+/* Swiper slider styles */
 .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-  /* Ensures that images cover the slides */
+/* Ensures that images cover the slides */
 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
-.img-section{
+/* Image section styles */
+.img-section {
   width: 90%;
   margin: auto;
   text-align: center;
   padding-top: 40px;
-
-}
-.img-section-coll{
-flex-basis: 31%;
-border-radius: 10px;
-margin-bottom: 5%;
-text-align: center;
-padding: 1.5vh;
-
 }
 
-.img-section-coll img{
-width: 100%;
-border-radius: 10px;
- 
+/* Individual image section styles */
+.img-section-coll {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 1.5vh;
 }
 
-.img-section-coll iframe{
-padding-top: 10px;
+.img-section-coll img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.rows{
-display: flex;
+.img-section-coll iframe {
+  padding-top: 10px;
 }
 
+/* Flexbox styles for rows */
+.rows {
+  display: flex;
+}
 
-@media(max-width:700px){
-.rows{
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+  .rows {
     flex-direction: column;
-}
-.img-section{
+  }
+  .img-section {
     width: 95%;
-  
-}
+  }
 }

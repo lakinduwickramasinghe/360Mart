@@ -17,7 +17,7 @@
     --green-color: #6AB100;
 }
 
-
+/* General reset for padding, margin, box-sizing, and list styles */
 *{
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -54,7 +54,7 @@ p{
 .head{
     align-items: center;
 }
-
+/* css codes for the category boxes section */
 .categories .category-container .box img{
     width: 200px;
     object-fit: contain;

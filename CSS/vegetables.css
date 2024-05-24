@@ -16,6 +16,8 @@
     --green-color: #6AB100;
 }
 
+/* General reset for padding, margin, box-sizing, and list styles */
+
 *{
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -23,6 +25,7 @@
     border: nones;
     box-sizing: border-box;
 }
+
 
 h1{
     font-size: 36px;
@@ -135,7 +138,6 @@ p{
     bottom: 0;
     padding: 10px;
     background: var(--primary-color);
-    /* background: rgb(199, 1, 1); */
     font-size: 20px;
     border-radius: 0.5rem 0.5rem 0;
     color: var(--white-color);
@@ -175,10 +177,7 @@ p{
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    
-
 }
-
 
 h1{
     font-size: 36px;
@@ -208,7 +207,7 @@ p{
 .sections{
     flex-basis: 31%;
     background: #ffe3e0;
-    /* background: #ffdbdb; */
+
     margin-bottom: 5%;
     border-radius: 10px;
     padding: 20px 12px;

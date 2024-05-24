@@ -15,6 +15,7 @@
   --red-color: #ff0000;
   --green-color: #6AB100;
 }
+/* General reset for padding, margin, box-sizing, and list styles */
 
 *{
     font-family: "Poppins", sans-serif;
@@ -45,6 +46,7 @@ p{
     margin-bottom: 10px;
 }
 
+/* signup form css codes */
 
 .frm-container{
   display: flex;

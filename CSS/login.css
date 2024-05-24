@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-:root{
+:root {
+  /* Color variables */
   --black-color: #000;
   --text-color: #210502;
   --background-color: #fff7f7;
@@ -16,41 +17,42 @@
   --green-color: #6AB100;
 }
 
-*{
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    border: nones;
-    box-sizing: border-box;
+/* Global styles */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: nones;
+  box-sizing: border-box;
 }
 
-h1{
-    font-size: 36px;
-    font-weight: 600;
+h1 {
+  font-size: 36px;
+  font-weight: 600;
 }
 
-h2{
-    padding-bottom: 10px;
+h2 {
+  padding-bottom: 10px;
 }
 
-p{
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
 }
 
-.selection{
-    margin-bottom: 10px;
+.selection {
+  margin-bottom: 10px;
 }
 
-
-.frm-container{
+/* Form container styles */
+.frm-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:25px;
+  padding: 25px;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./IMAGES/Banner-image-01.webp);
   width: 100%;
@@ -60,76 +62,84 @@ p{
   background-position: center;
 }
 
-.frm-container form{
-  padding:20px;
-  width:700px;
+/* Form styles */
+.frm-container form {
+  padding: 20px;
+  width: 700px;
   background: #fff;
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
 }
 
-.frm-container form .row{
+/* Form row styles */
+.frm-container form .row {
   display: flex;
   flex-wrap: wrap;
-  gap:15px;
+  gap: 15px;
 }
 
-.frm-container form .row .col{
-  flex:1 1 250px;
+/* Form column styles */
+.frm-container form .row .col {
+  flex: 1 1 250px;
 }
 
-.frm-container form .row .col .title{
+/* Form title styles */
+.frm-container form .row .col .title {
   font-size: 20px;
-  color:#333;
+  color: #333;
   padding-bottom: 5px;
   text-transform: uppercase;
 }
 
-.frm-container form .row .col .inputBox{
-  margin:15px 0;
+/* Input box styles */
+.frm-container form .row .col .inputBox {
+  margin: 15px 0;
 }
 
-.frm-container form .row .col .inputBox span{
+.frm-container form .row .col .inputBox span {
   margin-bottom: 10px;
   display: block;
 }
 
-.frm-container form .row .col .inputBox input{
+.frm-container form .row .col .inputBox input {
   width: 100%;
-  border:1px solid #ccc;
-  padding:10px 15px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
   font-size: 15px;
   text-transform: none;
 }
 
-.frm-container form .row .col .inputBox input:focus{
-  border:1px solid #000;
+.frm-container form .row .col .inputBox input:focus {
+  border: 1px solid #000;
 }
 
-.frm-container form .row .col .flex{
+/* Flex styles */
+.frm-container form .row .col .flex {
   display: flex;
-  gap:15px;
+  gap: 15px;
 }
 
-.frm-container form .row .col .flex .inputBox{
+.frm-container form .row .col .flex .inputBox {
   margin-top: 5px;
 }
 
-.frm-container form .row .col .inputBox img{
+/* Icon image styles */
+.frm-container form .row .col .inputBox img {
   height: 34px;
   margin-top: 5px;
   filter: drop-shadow(0 0 1px #000);
 }
 
-.frm-container form .submit-btn{
+/* Submit button styles */
+.frm-container form .submit-btn {
   width: 100%;
-  padding:12px;
+  padding: 12px;
   font-size: 17px;
   background: #27ae60;
-  color:#fff;
+  color: #fff;
   margin-top: 5px;
   cursor: pointer;
 }
 
-.frm-container form .submit-btn:hover{
+.frm-container form .submit-btn:hover {
   background: #2ecc71;
 }

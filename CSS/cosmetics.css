@@ -17,7 +17,7 @@
     --green-color: #6AB100;
 }
 
-
+/* General reset for padding, margin, box-sizing, and list styles */
 *{
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -40,7 +40,7 @@ p{
 }
 
 
-
+/* css codes for the table section starts here */
 
 .cosmetic_product {
     display: flex;
@@ -67,7 +67,7 @@ p{
 
 
 .cosmetic_product h3 {
-    color: var(--header-text);
+    color: var(--black-color);
     padding: 10px;
     font-size: 1.5em;
     font-family: "Poetsen One", sans-serif;
@@ -78,7 +78,7 @@ p{
     border-radius: 100%;
     width: 130px;
     height: 130px;
-    border: 1px solid var(--border);
+    border: 1px solid var(--black-color);
 }
 
 
@@ -93,12 +93,12 @@ table td a {
     padding: 8px;
     border-radius: 50px;
     color: var(--icon-text);
-    background-color: var(--icon-bg);
+    background-color: var(--secondary-color);
 }
 
 
 table td a:hover {
-    background-color: var(--sub-text);    
+    background-color: var(--secondary-color);    
     color: var(--text);
 }
 
@@ -115,21 +115,21 @@ table td a:hover {
 }
 
 .table th{
-    background-color: var(--th-bg);
+    background-color: var(--accent-color);
 }
 
 .table tbody tr:nth-child(even){
-    background-color: var(--tr-even);
+    background-color: var(--accent-color);
 }
 
 
 .table tbody tr:hover {
-    background-color: var(--tr-hover);
+    background-color: var(--secondary-color);
 }
 
 
 
-
+/* Media queries to make it responsive */
 @media(max-width:750px){
 
     

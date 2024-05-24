@@ -17,6 +17,7 @@
     --green-color: #6AB100;
 }
 
+/* General reset for padding, margin, box-sizing, and list styles */
 *{
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -48,8 +49,6 @@ p{
 
 
 
-
-
 /* text section codes */
 .main{
     display: flex;
@@ -72,12 +71,6 @@ p{
 }
 
 
-.text-one{
-    /* flex-basis: 31%; */
-
-    /* background: #ffdbdb; */
-
-}
 
 .sections:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
@@ -88,11 +81,7 @@ p{
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    
-
 }
-
-
 
 .row{
     margin-top: 5%;
@@ -110,7 +99,6 @@ p{
 .sections{
     flex-basis: 31%;
     background: #ffe3e0;
-    /* background: #ffdbdb; */
     margin-bottom: 5%;
     border-radius: 10px;
     padding: 20px 12px;
@@ -142,7 +130,7 @@ p{
 
 
 
-
+/* Css codes for the products */
 
 .products{
     max-width: 80%;
@@ -169,7 +157,7 @@ p{
 
 .products-container .box:hover{
     padding: 20px;
-    box-shadow: 4px 4px 20px 8px rgba(0, 141, 59, 0.295);
+    box-shadow: 4px 4px 20px 8px var(--secondary-color);
     cursor: pointer;
 }
 
@@ -200,7 +188,7 @@ p{
     position: absolute;
     top: 1rem;
     left: 0;
-    background: rgb(0, 199, 50);
+    background: var(--green-color);
     color: #fff;
     padding: 4px 18px;
 }
@@ -209,8 +197,9 @@ p{
     font-size: 1.6rem;
     font-weight: 600;
     margin-top: 0.5rem;
-    color: rgb(0, 182, 55);
-    text-shadow: 1px 1px 5px #e2e2e2;
+    /* color: rgb(0, 182, 55); */
+    color: var(--primary-color);
+    text-shadow: 1px 1px 5px #dbd9d9;
     
 }
 
@@ -218,8 +207,8 @@ p{
     position: absolute;
     top: 1rem;
     left: 0;
-    background: rgb(255, 0, 0);
-    color: #fff;
+    background: var(--red-color);
+    color: var(--white-color);
     padding: 4px 18px;
     text-shadow: 1px 1px 5px #e2e2e2;
 
@@ -235,15 +224,15 @@ p{
     right: 0;
     bottom: 0;
     padding: 10px;
-    background: rgb(1, 199, 1);
+    background: var(--primary-color);
     font-size: 20px;
     border-radius: 0.5rem 0.5rem 0;
-    color: #fff;
+    color: var(--white-color);
 
 }
 
 .products-container .box .fa-cart-shopping:hover{
-    background: orange;
+    background: var(--secondary-color);
     transition: 0.2s all linear;
 }
 
@@ -257,17 +246,17 @@ p{
 }
 
 .in-stock-label{
-    color: rgb(106, 177, 0);
+    color: var(--green-color);
 }
 .out-of-stock-label{
-    color: #ff0000;
+    color: var(--red-color);
 }
 
 
 
 
 
-/* Three sections css codes */
+/* css codes for the text section */
 
 
 .sub-section{
@@ -320,6 +309,8 @@ p{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
+
+/* media queries to make everything responsive */
 @media(max-width:700px){
     .row{
         flex-direction: column;

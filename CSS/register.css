@@ -15,6 +15,7 @@
   --red-color: #ff0000;
   --green-color: #6AB100;
 }
+/* General reset for padding, margin, box-sizing, and list styles */
 
 *{
     font-family: "Poppins", sans-serif;
@@ -40,6 +41,8 @@ p{
     line-height: 22px;
     padding: 10px;
 }
+
+/* loyalty schemes explenation part css codes */
 
 .img-section .rows .img-section-coll span{
     margin-bottom: 50px;
@@ -103,20 +106,12 @@ ol{
 
 
 
-
-
 .selection{
     margin-bottom: 10px;
 }
 
 
-
-
-
-
-
-
-
+/* codes for the registration form */
 .frm-container{
   display: flex;
   justify-content: center;
