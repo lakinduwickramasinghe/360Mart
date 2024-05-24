@@ -20,6 +20,7 @@
     height: 100%;
   }
 
+
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -29,19 +30,10 @@
     align-items: center;
   }
 
+  /* Ensures that images cover the slides */
   .swiper-slide img {
     display: block;
     width: 100%;
     height: 500px;
     object-fit: cover;
   }
-  .swiper-pagination-bullet {
-    background-color: #ff6347; /* Custom color for bullets */
-  }
-  .swiper-pagination-bullet-active {
-    background-color: #4caf50; /* Custom color for active bullet */
-  }
-  /* Style for navigation buttons */
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #ff6347;
