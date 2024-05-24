@@ -1,0 +1,39 @@
+.img-section{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+  
+  }
+  .img-section-coll{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 1.5vh;
+  
+  }
+  
+  .img-section-coll img{
+    width: 100%;
+    border-radius: 10px;
+     
+  }
+  
+  .img-section-coll iframe{
+    padding-top: 10px;
+  }
+  
+  .rows{
+    display: flex;
+  }
+  
+  
+  @media(max-width:700px){
+    .rows{
+        flex-direction: column;
+    }
+    .img-section{
+        width: 95%;
+    
+    }
