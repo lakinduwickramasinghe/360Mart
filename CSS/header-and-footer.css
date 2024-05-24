@@ -245,6 +245,7 @@ main{
   }
   
   .sc-2 i {
+    padding-top: 8px;
     font-size: 28px; 
     color: var(--accent-color);
   }
@@ -428,7 +429,8 @@ main{
 
 /* Footer css code */
 footer{
-    margin-top: 10vh;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 body{
   line-height: 1.5;
