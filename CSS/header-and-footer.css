@@ -41,7 +41,11 @@ rather than pasting the same css code in every page's css file */
 
 a{
     text-decoration: none;
-    color: var(--white-color);}
+    color: var(--white-color);
+}
+.blk-text{
+    color: var(--black-color);
+}
 
 *{
     font-family: "Poppins", sans-serif;
