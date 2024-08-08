@@ -1,0 +1,199 @@
+[
+    {
+        "id":"1",
+        "name": "Avacado",
+        "category":"Fruits",
+        "price":"272",
+        "image":"./images/fruits/Avacado.jpg"
+    },
+    {
+        "id":"2",
+        "name": "Melon",
+        "category":"Fruits",
+        "price":"100",
+        "image":"./images/fruits/melon.jpg"
+    },
+    {
+        "id":"3",
+        "name": "Grapes",
+        "category":"Fruits",
+        "price":"3490",
+        "image":"./images/fruits/grapes.jpg"
+    },
+    {
+        "id":"4",
+        "name": "Banana",
+        "category":"Fruits",
+        "price":"410",
+        "image":"./images/fruits/banana.jpg"
+    },
+    {
+        "id":"5",
+        "name": "Dragon Fruit",
+        "category":"Fruits",
+        "price":"1920",
+        "image":"./images/fruits/dragon fruit.jpg"
+    },
+    {
+        "id":"6",
+        "name": "Guava",
+        "category":"Fruits",
+        "price":"250",
+        "image":"./images/fruits/guava.jpg"
+    },
+    {
+        "id":"7",
+        "name": "Cabbage",
+        "category":"Vegetables",
+        "price":"304",
+        "image":"./images/veg/cabbage.jpg"
+    },
+    {
+        "id":"8",
+        "name": "Cucumber",
+        "category":"Vegetables",
+        "price":"500",
+        "image":"./images/veg/cucumber.jpg"
+    },
+    {
+        "id":"9",
+        "name": "Tomatoes",
+        "category":"Vegetables",
+        "price":"1080",
+        "image":"./images/veg/tomatoe.jpg"
+    },
+    {
+        "id":"10",
+        "name": "Broccoli",
+        "category":"Vegetables",
+        "price":"5250",
+        "image":"./images/veg/broccoli.jpg"
+    },
+    {
+        "id":"11",
+        "name": "Bell Pepper",
+        "category":"Vegetables",
+        "price":"2580",
+        "image":"./images/veg/bell pepper.jpg"
+    },
+    {
+        "id":"12",
+        "name": "Lemon",
+        "category":"Vegetables",
+        "price":"1230",
+        "image":"./images/veg/lemon.jpg"
+    },
+    {
+        "id":"13",
+        "name": "Yoghurt",
+        "category":"Dairy",
+        "price":"180",
+        "image":"./images/dairy produce/Yoghurt.jpg"
+    },
+    {
+        "id":"14",
+        "name": "Fresh milk",
+        "category":"Dairy",
+        "price":"140",
+        "image":"./images/dairy produce/Fresh milk.jpg"
+    },
+    {
+        "id":"15",
+        "name": "Milk Poder",
+        "category":"Dairy",
+        "price":"1050",
+        "image":"./images/dairy produce/milk powder.jpg"
+    },
+    {
+        "id":"16",
+        "name": "Butter",
+        "category":"Dairy",
+        "price":"1100",
+        "image":"./images/dairy produce/butter.jpg"
+    },
+    {
+        "id":"17",
+        "name": "Cheese",
+        "category":"Dairy",
+        "price":"880",
+        "image":"./images/dairy produce/cheese.jpg"
+    },
+    {
+        "id":"18",
+        "name": "Cream Cheese",
+        "category":"Dairy",
+        "price":"1890",
+        "image":"./images/dairy produce/cream cheese.jpg"
+    },
+    {
+        "id":"19",
+        "name": "Chicken Drumsticks",
+        "category":"Meat",
+        "price":"1980",
+        "image":"./images/meat and seafood/chicken drumsticks.jpg"
+    },
+    {
+        "id":"20",
+        "name": "Beef",
+        "category":"Meat",
+        "price":"5900",
+        "image":"./images/meat and seafood/beef.jpg"
+    },
+    {
+        "id":"21",
+        "name": "Prawns",
+        "category":"Meat",
+        "price":"1690",
+        "image":"./images/meat and seafood/prawns.jpg"
+    },
+    {
+        "id":"22",
+        "name": "Tuna",
+        "category":"Meat",
+        "price":"2390",
+        "image":"./images/meat and seafood/tuna.jpg"
+    },
+    {
+        "id":"23",
+        "name": "Wheat Flour",
+        "category":"Baking",
+        "price":"261",
+        "image":"./images/baking and cooking/wheat flour.jpg"
+    },
+    {
+        "id":"24",
+        "name": "Icing Sugar",
+        "category":"Baking",
+        "price":"240",
+        "image":"./images/baking and cooking/icing sugar.jpg"
+    },
+    {
+        "id":"25",
+        "name": "Baking Powder",
+        "category":"Baking",
+        "price":"230",
+        "image":"./images/baking and cooking/baking powder.jpg"
+    },
+    {
+        "id":"26",
+        "name": "Eggs",
+        "category":"Baking",
+        "price":"649",
+        "image":"./images/baking and cooking/eggs.jpg"
+    },
+    {
+        "id":"27",
+        "name": "Coconut Oil",
+        "category":"Baking",
+        "price":"715",
+        "image":"./images/baking and cooking/coconut oil.jpg"
+    },
+    {
+        "id":"28",
+        "name": "Salt",
+        "category":"Baking",
+        "price":"115",
+        "image":"./images/baking and cooking/salt.jpg"
+    }
+    ]
+
