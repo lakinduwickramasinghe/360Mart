@@ -136,7 +136,7 @@ p {
 }
 
 .in-stock-label {
-    color: var(--green-color);
+    color: #315200;
 }
 
 .out-of-stock-label {
