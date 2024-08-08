@@ -23,7 +23,7 @@ const addDataToHTML = (category = null) => {
                     <i class="fa-regular fa-heart"></i>
                 </h3>
                 <label for="qty">QTY: </label>
-                <input type="number" name="qty" class="qty" value="1">
+                <input type="number" id="qty" class="qty" value="1">
                 <button class="addCart">Add To Cart</button>
                 <span class="discount">BEST SELLER</span>
             `;
