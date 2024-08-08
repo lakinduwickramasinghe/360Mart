@@ -95,33 +95,33 @@
 
                 <section class="inputBox">
                     <span>full name :</span>
-                    <input type="text" placeholder="Ex : ed Smith">
+                    <input type="text" placeholder="Ex : ed Smith" required>
                 </section>
 
                 <section class="inputBox">
                     <span>email :</span>
-                    <input type="email" placeholder="Ex : smith805@gmail.com">
+                    <input type="email" placeholder="Ex : smith805@gmail.com" required>
                 </section>
 
                 <section class="inputBox">
                     <span>address :</span>
-                    <input type="text" placeholder="Ex : No 581 kings street">
+                    <input type="text" placeholder="Ex : No 581 kings street" required>
                 </section>
 
                 <section class="inputBox">
                     <span>city :</span>
-                    <input type="text" placeholder="Ex : Kandy">
+                    <input type="text" placeholder="Ex : Kandy" required>
                 </section>
 
                 <section class="flex">
                     <section class="inputBox">
                         <span>Province :</span>
-                        <input type="text" placeholder="Ex : Central">
+                        <input type="text" placeholder="Ex : Central" required>
                     </section>
 
                     <section class="inputBox">
                         <span>zip code :</span>
-                        <input type="text" placeholder="Ex : 21000">
+                        <input type="text" placeholder="Ex : 21000" required>
                     </section>
 
                 </section>
@@ -140,28 +140,28 @@
 
                 <section class="inputBox">
                     <span>name on card :</span>
-                    <input type="text" placeholder="Ex : ed Smith">
+                    <input type="text" placeholder="Ex : ed Smith" required>
                 </section>
 
                 <section class="inputBox">
                     <span>credit card number :</span>
-                    <input type="number" placeholder="XXXX-XXXX-XXXX-XXXX">
+                    <input type="number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
                 </section>
 
                 <section class="inputBox">
                     <span>exp month :</span>
-                    <input type="text" placeholder="Ex : january">
+                    <input type="text" placeholder="Ex : january" required>
                 </section>
 
                 <section class="flex">
                     <section class="inputBox">
                         <span>exp year :</span>
-                        <input type="number" placeholder="Ex : 2022">
+                        <input type="number" placeholder="Ex : 2022" required>
                     </section>
 
                     <section class="inputBox">
                         <span>CVV :</span>
-                        <input type="text" placeholder="XXXX">
+                        <input type="text" placeholder="XXXX" required>
                     </section>
 
                 </section>
@@ -170,12 +170,26 @@
     
         </section>
 
-        <input type="submit" value="proceed to checkout" class="submit-btn">
+
+        <!-- <button class="btn-pcd action-btn"></button> -->
+
+        <input type="submit" value="proceed to checkout" class="submit-btn btn-pcd action-btn">
+        
 
     </form>
 
 </section>   
 
+
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+      <span id="closePopupBtn" class="close-btn">&times;</span>
+      <h2 id="popupTitle">Message</h2>
+      <p id="popupMessage">Your action was successful.</p>
+      <button id="popupButton" class="popup-button">Okay</button>
+  </div>
+</div>
 <!-- Footer -->
 
 <footer class="footer">
@@ -220,6 +234,8 @@
      </section>
     </section>
   </footer>
+
+  <script src="./JS/order.js"></script>
     
 </body>
 </html>

@@ -138,11 +138,26 @@
             </table>
             <p id="total-price">Total : ₨ 0.00</p>
             <button id="clear-cart-button">Clear Cart</button>
-            <button id="fav">Add to Favourites</button>
-            <button id="apply-favourites-button">Apply Favourites</button><br>
+            <button id="fav" class="btn-fav action-btn">Add to Favourites</button>
+            <button id="apply-favourites-button" class="btn-load-fav action-btn">Apply Favourites</button><br>
             <button onclick="window.location.href='./order.html'" id="checkout-button">Buy Now</button>
         </div>
     </div>
+
+
+
+
+<!-- Popup -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span id="closePopupBtn" class="close-btn">&times;</span>
+        <h2 id="popupTitle">Message</h2>
+        <p id="popupMessage">Your action was successful.</p>
+        <button id="popupButton" class="popup-button">Okay</button>
+    </div>
+</div>
+
+
 
 
         <script src="./JS/main.js"></script>

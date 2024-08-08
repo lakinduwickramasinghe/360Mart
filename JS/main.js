@@ -162,3 +162,74 @@ document.querySelector('.category-buttons').addEventListener('click', (event) =>
     }
 });
 
+
+// popup js
+
+// Function to open the popup with dynamic content
+function openPopup(title, message, buttonText, buttonAction) {
+    // Set the title and message
+    document.getElementById('popupTitle').innerText = title;
+    document.getElementById('popupMessage').innerText = message;
+
+    // Set the button text and action
+    const popupButton = document.getElementById('popupButton');
+    popupButton.innerText = buttonText;
+
+    // Remove any existing event listeners to avoid stacking
+    const newButton = popupButton.cloneNode(true);
+    popupButton.parentNode.replaceChild(newButton, popupButton);
+
+    // Add new action if provided
+    if (buttonAction) {
+        newButton.addEventListener('click', buttonAction);
+    }
+
+    // Display the popup
+    document.getElementById('popup').style.display = 'flex';
+}
+
+// Event listener for all action buttons
+document.querySelectorAll('.action-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        let title, message, buttonText, buttonAction;
+
+        // Check the class name of the clicked button and set content accordingly
+        if (this.classList.contains('btn-fav')) {
+            title = 'Favourites Saved';
+            message = 'Your favourites have been successfully saved!';
+            buttonText = 'Okay';
+            buttonAction = function() {
+                document.getElementById('popup').style.display = 'none';
+            };
+        } else if (this.classList.contains('btn-load-fav')) {
+            title = 'Favourites Loaded';
+            message = 'Your favourites have been successfully loaded!';
+            buttonText = 'Okay';
+            buttonAction = function() {
+                document.getElementById('popup').style.display = 'none';
+            };
+        } else if (this.classList.contains('btn-pcd')) {
+            title = 'Order Placed';
+            message = 'Your order has been placed. It will arrive in 2-3 business days.';
+            buttonText = 'View Order';
+            buttonAction = function() {
+                window.location.href = './order.html'; // Replace with the appropriate link
+            };
+        }
+
+        // Open the popup with the set content
+        openPopup(title, message, buttonText, buttonAction);
+    });
+});
+
+// Close the popup
+document.getElementById('closePopupBtn').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'none';
+});
+
+// Close the popup when clicking outside of the content
+window.onclick = function(event) {
+    if (event.target === document.getElementById('popup')) {
+        document.getElementById('popup').style.display = 'none';
+    }
+}
