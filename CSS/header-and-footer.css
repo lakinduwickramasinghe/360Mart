@@ -158,7 +158,7 @@ header {
 .nav-links {
     display: flex;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: #E87968;
 }
 
 .nav-links ul {
