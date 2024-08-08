@@ -22,8 +22,9 @@ rather than pasting the same css code in every page's css file */
 }
 
 
-
-
+.lbl{
+    display: block;
+}
 
 
 .deco-list{
